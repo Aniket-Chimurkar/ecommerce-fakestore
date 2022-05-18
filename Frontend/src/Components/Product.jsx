@@ -64,7 +64,7 @@ const Product = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons">
+        <div className="buttons bg-success p-2 text-dark bg-opacity-25">
           <button
             className="btn btn-outline-dark me-2 mb-5 pb-1"
             onClick={() => setfilter(data)}
@@ -96,23 +96,23 @@ const Product = () => {
             Electronics
           </button>
         </div>
-        <div>
+        <div className="bg-success p-2 text-dark bg-opacity-25">
           <button className="btn btn-outline-dark me-2 mb-5 pb-1"   onClick={()=>{handleSort("price",-1)}} >Price : High to Low </button>
           <button className="btn btn-outline-dark me-2 mb-5 pb-1"   onClick={()=>{handleSort("price",1)}}>Price : Low to High </button>
         </div>
         {filter.map((product) => {
           return (
             <>
-              <div className="col-md-3 mb-4">
-                <div class="card h-100 text-center p-4" key={product._id}>
+              <div className="col-md-3 mb-4 ">
+                <div class="card h-100 text-center p-4 bg-success p-2 text-dark bg-opacity-10" key={product._id}>
                   <img
                     src={product.image}
                     class="card-img-top"
                     height="250px"
                     alt={product.title}
                   />
-                  <div class="card-body">
-                    <h5 class="card-title mb-0">
+                  <div class="card-body bg-success p-2 text-dark bg-opacity-25">
+                    <h5 class="card-title mb-0 ">
                       {product.title.substring(0, 12)}
                     </h5>
                     <p class="card-text">${product.price}</p>
@@ -134,8 +134,8 @@ const Product = () => {
 
   return (
     <div>
-      <div className="container my-5 py-5">
-        <div className="row">
+      <div className=" my-5 py-5 bg-success p-2 text-dark bg-opacity-25">
+        <div className="row ">
           <div className="col-12 mb-5">
             <h1 className="display-6 fw-bold text-center mb-5">
               Latest Products

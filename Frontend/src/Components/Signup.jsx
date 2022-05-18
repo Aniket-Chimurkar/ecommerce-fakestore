@@ -46,7 +46,7 @@ export const SignUp=()=>{
     }
     return (
         <div>
-            <div className="container1">
+            <div className="container1 bg-success p-2 text-dark bg-opacity-25">
                 <div className="main">
                     <h1>Sign-Up</h1>
             {/* <input type="text"

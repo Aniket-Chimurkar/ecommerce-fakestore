@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const state = useSelector((state)=>state.handleCart)
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-success p-2 text-dark bg-opacity-25">
       <div className="container">
         <NavLink className="navbar-brand  fs-10"  to="/">
           Fake Store <br/> Collection

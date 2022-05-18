@@ -34,8 +34,8 @@ const Productpage=()=>{
       const Loading =()=>{
           return(
               <>
-          <div class="d-flex justify-content-center">
-  <div class="spinner-border" role="status">
+          <div class="d-flex justify-content-center bg-success p-2 text-dark bg-opacity-10">
+  <div class="spinner-border bg-success p-2 text-dark bg-opacity-10" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
@@ -46,7 +46,7 @@ const Productpage=()=>{
       const ShowProduct=()=>{
           return(
               <>
-              <div className="col-md-6">
+              <div className="col-md-6 bg-success p-2 text-dark bg-opacity-10">
                   <img src={product.image} height="400px" width="400px"></img>
               </div>
               <div className="col-md-6">
@@ -57,7 +57,7 @@ const Productpage=()=>{
                   <p className="lead fw-bolder">Rating : {product.rating  && product.rating.rate}
                   <i className="fa fa-star"></i>
                   </p>
-                  <h3 className="display-6 fw-bold my-4"> $ {product.price}</h3>
+                  <h3 className="display-6 fw-bold text-dark my-4"> $ {product.price}</h3>
                   <p className="lead">{product.description}</p>
                   <button className="btn btn-outline-dark" onClick={()=>addProduct(product)}>Add to cart</button>
                   <NavLink to="/cart" className="btn btn-outline-dark ms-2">Go to cart</NavLink>
@@ -70,7 +70,7 @@ const Productpage=()=>{
     return (
         <>
         <div>
-            <div className="container">
+            <div className="containe bg-success p-2 text-dark bg-opacity-10">
                 <div className="row">
                     {loading ? <Loading/> : <ShowProduct/>}
                 </div>

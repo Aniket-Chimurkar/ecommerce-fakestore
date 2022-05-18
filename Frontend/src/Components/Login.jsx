@@ -34,7 +34,7 @@ export const Login=()=>{
         .catch((err)=>dispatch(loginfailure(err)))
     }
     return (
-        <div className="container1">
+        <div className="container1 bg-success p-2 text-dark bg-opacity-25">
            
         <div className="main">
         <h1>Login</h1>
