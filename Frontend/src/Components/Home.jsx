@@ -11,10 +11,7 @@ const Home = () => {
         />
         <div className="card-img-overlay d-flex flex-colomn justify-content-center">
           <div className="container">
-            <h5 className="card-title display-4 fw-bold ">
-              New Season Arrival
-            </h5>
-            <p className="card-text  fs-2 ">Check Out all the trends</p>
+            
           </div>
         </div>
       </div>

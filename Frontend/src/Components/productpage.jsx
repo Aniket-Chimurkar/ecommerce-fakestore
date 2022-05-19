@@ -35,6 +35,7 @@ const Productpage=()=>{
           return(
               <>
           <div class="d-flex justify-content-center bg-success p-2 text-dark bg-opacity-10">
+              <h1>Loading...</h1>
   <div class="spinner-border bg-success p-2 text-dark bg-opacity-10" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>

@@ -60,6 +60,10 @@ const Product = () => {
 
     
 }
+const handleSortrating=(sortBy, type)=>{
+  if(sortBy==="rating" && type===1) setfilter((prev)=> [...prev.sort((a,b)=>a.price>b.price?1:-1)])
+  if(sortBy==="rating" && type===-1) setfilter((prev)=> [...prev.sort((a,b)=>a.price>b.price?-1:1)])
+}
 
   const ShowProducts = () => {
     return (
@@ -75,13 +79,13 @@ const Product = () => {
             className="btn btn-outline-dark me-2 mb-5 pb-1"
             onClick={() => filterproduct("men's clothing")}
           >
-            Mens Clothing
+            Mens Fashion
           </button>
           <button
             className="btn btn-outline-dark me-2 mb-5 pb-1"
             onClick={() => filterproduct("women's clothing")}
           >
-            Womens Clothing
+            Womens Fashion
           </button>
           <button
             className="btn btn-outline-dark me-2 mb-5 pb-1"
@@ -99,6 +103,8 @@ const Product = () => {
         <div className="bg-success p-2 text-dark bg-opacity-25">
           <button className="btn btn-outline-dark me-2 mb-5 pb-1"   onClick={()=>{handleSort("price",-1)}} >Price : High to Low </button>
           <button className="btn btn-outline-dark me-2 mb-5 pb-1"   onClick={()=>{handleSort("price",1)}}>Price : Low to High </button>
+          <button className="btn btn-outline-dark me-2 mb-5 pb-1"   onClick={()=>{handleSortrating("rating",-1)}} >Rating : High to Low </button>
+          <button className="btn btn-outline-dark me-2 mb-5 pb-1"   onClick={()=>{handleSortrating("rating",1)}}>Rating : Low to High </button>
         </div>
         {filter.map((product) => {
           return (
