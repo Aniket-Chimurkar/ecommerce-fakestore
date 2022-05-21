@@ -28,7 +28,7 @@
 
 
  </div>
-        <a href="https://https://e-commerce-aniket.herokuapp.com/products/"><h3>SITE :   EcommerceBackend.netlify.com</h3></a>
+    <h3>Backend deployed link := https://e-commerce-aniket.herokuapp.com/products</h3>
  
  <div style="display: flex;" >
 <div > 
